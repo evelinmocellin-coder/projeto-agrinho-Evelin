@@ -1,0 +1,159 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #f39c12; /* Amarelo Mel */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://catracalivre.com.br/wp-content/uploads/2026/02/freepik-abelha-operria-trabalhando-sobre-favo-de-mel-abert-32757.png') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+/* Alteração feita aqui para garantir o branco puro na frase */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #ffffff; 
+}
+
+.btn {
+    background-color: #fcbc0d; /* Verde Sustentável */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffca1e;
+}
+
+/* Containers e Seções */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.bg-light {
+    background-color: #fdd06f;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-left: 5px solid #f39c12;
+    padding-left: 10px;
+}
+
+.text-center {
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Grid de Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid #f39c12;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Citação */
+blockquote {
+    font-style:italic ;
+    background: #f3dba3;
+    border-left: 5px solid #f39c12;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
